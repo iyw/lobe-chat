@@ -9,4 +9,6 @@ export const ModelTokens: Record<LanguageModel, number> = {
   [LanguageModel.GPT4_PREVIEW]: 128_000,
   [LanguageModel.GPT4_VISION_PREVIEW]: 128_000,
   [LanguageModel.GPT4_32K]: 32_768,
+  [LanguageModel.GPT4_ALL]: 16_385,
+
 };

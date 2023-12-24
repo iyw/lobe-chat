@@ -18,7 +18,7 @@ describe('settingsSelectors', () => {
           defaultAgent: {
             config: {
               systemRole: '',
-              model: LanguageModel.GPT3_5,
+              model: LanguageModel.GPT3_5_1106,
               params: {},
               tts: {
                 showAllLocaleVoice: false,
