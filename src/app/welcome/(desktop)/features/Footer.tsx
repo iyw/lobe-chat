@@ -29,14 +29,7 @@ const Footer = memo(() => {
           size={'site'}
           title={'Wiki'}
         />
-        <ActionIcon
-          icon={Github}
-          onClick={() => window.open(GITHUB, '__blank')}
-          size={'site'}
-          title={'GitHub'}
-        />
-      </Flexbox>
-    </Flexbox>
+      </Flexbox>    </Flexbox>
   );
 });
 
