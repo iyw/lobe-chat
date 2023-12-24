@@ -4,7 +4,6 @@ import {
   Book,
   Feather,
   FileClock,
-  Github,
   HardDriveDownload,
   HardDriveUpload,
   Heart,
@@ -16,7 +15,7 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import { ABOUT, CHANGELOG, DISCORD, FEEDBACK, GITHUB, WIKI } from '@/const/url';
+import { ABOUT, CHANGELOG, DISCORD, FEEDBACK, WIKI } from '@/const/url';
 import DataImporter from '@/features/DataImporter';
 import { configService } from '@/services/config';
 import { GlobalStore, useGlobalStore } from '@/store/global';
@@ -130,12 +129,6 @@ const BottomActions = memo<BottomActionProps>(({ tab, setTab }) => {
         onClick={() => window.open(DISCORD, '__blank')}
         placement={'right'}
         title={'Discord'}
-      />
-      <ActionIcon
-        icon={Github}
-        onClick={() => window.open(GITHUB, '__blank')}
-        placement={'right'}
-        title={'GitHub'}
       />
       <Dropdown arrow={false} menu={{ items }} trigger={['click']}>
         {hasNewVersion ? (
